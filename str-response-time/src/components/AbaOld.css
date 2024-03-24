@@ -1,0 +1,169 @@
+.aba {
+    width: 500px;
+    height: 300px;
+    border-top-color: #B14284;
+    border-left-color: #B14284;
+    border-right-color: #260930;
+    border-bottom-color: #260930;
+    border-top-width: 7px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 7px;
+    border-style: solid;
+    background-color: #736F99;
+}
+
+.aba button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEAE34;
+}
+
+.hidden {
+    display: none;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #6A3B79;
+    border-right-color: #552C63;
+    border-bottom-color: #552C63;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 7px;
+    border-right-width: 5px;
+    border-style: solid;
+}
+
+.titulo {
+    font-size: 9px;
+    color: white;
+}
+
+.titulo h1 {
+    margin: 0;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.separador {
+    height: 30px;
+    border-top-color: #B55C94;
+    border-left-color: transparent;
+    border-right-color: #5C5179;
+    border-bottom-color: #5C5179;
+    border-width: 5px;
+    border-left-width: 0px;
+    border-style: solid;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    border-top-color: #260930;
+    border-left-color: #260930;
+    color: white;
+    border-top-width: 4px;
+    border-bottom-width: 0px;
+    border-left-width: 4px;
+    border-right-width: 0px;
+    border-style: solid;
+    height: calc(100% - 96px);
+    gap: 20px;
+}
+
+.buttonD {
+    padding: 5px;
+    width: 100px;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: #BD7D33;
+    border-bottom-color: #BD7D33;
+}
+
+.bOC {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #260930;
+}
+
+.decisao {
+    display: flex;
+    gap: 30px;
+}
+
+.d-vgame {
+    height: 600px;
+    width: 700px;
+}
+
+.container-viewGame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 92px);
+}
+
+.viewGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    background-color: black;
+    color: white;
+}
+
+.viewGame .nuvem {
+    width: 50%;
+    height: 50%;
+}
+
+.controles {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #552C63;
+}
+
+.teclas {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 5px;
+    grid-row-gap: 0px;
+    padding: 20px;
+}
+
+.teclas button {
+    height: 50px;
+}
+
+.teclas button:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.teclas button:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.teclas button:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.teclas button:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+}
