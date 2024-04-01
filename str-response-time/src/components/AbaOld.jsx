@@ -17,6 +17,17 @@ const Aba = (props) => {
     const [listening, setListening] = useState(false);
     const [lastImage, setLastImage] = useState(null);
 
+    const getRandomPosition = () => {
+        // Gere valores aleatórios para as posições top e left
+        const randomTop = Math.floor(Math.random() * 90) + 5; // Valores entre 5% e 95%
+        const randomLeft = Math.floor(Math.random() * 90) + 5; // Valores entre 5% e 95%
+
+        return {
+            top: `${randomTop}%`,
+            left: `${randomLeft}%`
+        };
+    };
+
     const handleOkClick = () => {
         setIsVisible(false); // Atualiza o estado para ocultar o componente Aba
         navigate('/vgame'); // Navega para a rota do componente Vgame
@@ -127,8 +138,17 @@ const Aba = (props) => {
             {visibilidadeGame && (
                 <div className="container-viewGame">
                     <div className="viewGame">
-                        {currentImage && <img src={currentImage} className='nuvem' alt="Nuvem" />}
-                        {correctKey && <p>Resposta correta! Tecla pressionada: {correctKey}, Tempo de resposta: {responseTime} segundos</p>}                    </div>
+                        {currentImage && <img
+                            src={currentImage}
+                            className="nuvem"
+                            alt="Nuvem"
+                            style={{
+                                position: 'absolute',
+                                ...getRandomPosition(),
+                            }}
+                        />}
+                        {correctKey && <p>Resposta correta! Tecla pressionada: {correctKey}, Tempo de resposta: {responseTime} segundos</p>}
+                    </div>
                     <div className="controles">
                         <div className="teclas">
                             <button type="button">W</button>
